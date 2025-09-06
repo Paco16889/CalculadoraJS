@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="public/jsFront/imprimirResultado.js" defer></script>
+    <script src="jsFront/imprimirResultado.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,7 +15,10 @@
     </header>
     <main>
         <section>
-            <input type="number" id="pantalla">
+            <label for="pantalla">
+                <input type="number" id="pantalla">
+
+            </label>
             <button value="1" id="uno">
                 1
             </button>
@@ -46,13 +49,13 @@
             <button value="0" id="cero">
                 0
             </button>
-            <button value="suma" id="suma">
+            <button value="+" id="suma">
                 +
             </button>
-            <button value="resta" id="resta">
+            <button value="-" id="resta">
                 -
             </button>
-            <button value="resultado" id="resultado">
+            <button value="=" id="resultado">
                 =
             </button>
         </section>
