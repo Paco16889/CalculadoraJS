@@ -1,3 +1,5 @@
+import {manejarNumero} from "./private/realizaOperaciones.js";
+
 const pantalla = document.getElementById('pantalla');
 
 const botones = document.querySelectorAll('button');
