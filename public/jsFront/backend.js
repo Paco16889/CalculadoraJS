@@ -6,3 +6,5 @@ function suma(a, b) {
 function resta(a, b) {
     return suma(a, -b);
 }
+
+export {suma, resta};

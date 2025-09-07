@@ -2,6 +2,8 @@
 //las funcioens para las operaciones las sacaremos del fichero backend.js
 //y pasaremos al front los datos para ser impresos en panntalla
 //IMPORTA FUNCIONES IMPORTANTE
+import { suma } from "./backend.js";
+import { resta } from "./backend.js";
 let operandoA = null;
 let operandoB = null;
 let operador = null;
@@ -45,9 +47,9 @@ function calcularResultado() {
 
 
     // Llamamos a la función correspondiente de operaciones.js
-    if (operador === 'suma') {
+    if ((operador === 'suma')|| (operador === '+')) {
         resultado = suma(operandoA, operandoB);
-    } else if (operador === 'resta') {
+    } else if ((operador === 'resta') || (operador === '-')) {
         resultado = resta(operandoA, operandoB);
     }
 
@@ -59,4 +61,5 @@ function calcularResultado() {
     return resultado;  // Devolvemos el resultado
 }
 
+export {calcularResultado, manejarNumero, manejarOperador};
 
