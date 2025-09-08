@@ -25,7 +25,10 @@ function division(a, b){
     let cocientesDecimales = [];
     let cocientesSeparados = [];
     let resultado;
-    for (cociente = 0; resto >= divisor; cociente++) {
+    if (b === 0) {
+        resultado = 'ERROR';
+    }else{
+        for (cociente = 0; resto >= divisor; cociente++) {
         resto = resta(resto, divisor);
     }
     
@@ -50,6 +53,8 @@ function division(a, b){
     }
     cocientesSeparados[0] = cociente;
     resultado = cocientesSeparados.join('.')
+    }
+    
     return resultado;
 
 }
