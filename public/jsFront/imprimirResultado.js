@@ -1,4 +1,4 @@
-import { division, multiplicacion, resta, suma } from "./backend.js";
+import { division, multiplicacion, resta, suma } from "./operaciones.js";
 
 
 const pantalla = document.getElementById('pantalla');

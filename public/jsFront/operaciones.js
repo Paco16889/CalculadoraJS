@@ -38,11 +38,6 @@ function division(a, b){
             }
             
            cocientesDecimales[i] = cocienteDecimal;
-            ///tengo que rejunar en array los digitos decimales pff que liadaaaaa a dormir 
-            ///acuerdate estas ahora ismo que te suma los cocientes decimales 
-            //quieres que cociente decimal sea migual menos uno
-            //otro digito decimal que valga la cuenta y que repita sacando un nuevo elemento de array
-            //pueba for dentro de for un for que de a un array valores que sean cada uno la cuenta del bucle interno
          
             
         }
